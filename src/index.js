@@ -7,6 +7,7 @@ const {
   requestBufferToDataUrl,
 } = require('./middlewares/multer');
 const { cloudinaryConfig, uploader } = require('./config/cloudinary');
+const port = process.env.PORT || 3333;
 
 const app = express();
 
@@ -40,6 +41,6 @@ app.post('/upload', cloudinaryConfig, multerUpload, async (req, res) => {
   }
 });
 
-app.listen(3333, () => {
-  console.log('Server running at port 3333');
+app.listen(port, () => {
+  console.log(`Server running at port ${port}`);
 });
