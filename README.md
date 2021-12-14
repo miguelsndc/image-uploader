@@ -55,11 +55,8 @@
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
-- Drag and drop an image to upload it
-- Choose to select an image from my folder
-- Loader when uploading
-- When the image is uploaded, see the image and copy it
-- Copy to the clipboard
+- Receive a file via multipart/form-data
+- Upload it to some storage (using cloudinary)
 
 ## How To Use
 
