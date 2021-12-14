@@ -31,7 +31,7 @@ app.post('/upload', cloudinaryConfig, multerUpload, async (req, res) => {
     });
 
     return res.json({
-      url: result.secure_url,
+      url: result.url,
     });
   } catch (error) {
     return res.status(500).json({
